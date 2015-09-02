@@ -14,11 +14,20 @@ var RadioOtherOption = React.createClass({
         });
        
     },
-  render : function() {
+    componentDidUpdate : function(prevProps,prevState) {
+        var input = this.refs.input.getDOMNode();
+        console.log(input);
+        if(prevState.checked !== input.checked) {
+            this.setState({
+                checked: input.checked
+            });
+        }
+    },
+    render : function() {
     return(
         <p>
             <label>
-                <input onChange={this.onChange} type="radio" name ="referrer" value="other" />
+                <input ref="input" onChange={this.onChange} type="radio" name ="referrer" value="other" />
                 Other
             </label><br/>
 
