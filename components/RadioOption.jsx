@@ -1,5 +1,9 @@
 var RadioOption = React.createClass({
-  render : function() {
+	propTypes: {
+		value : React.PropTypes.string,
+		children : React.PropTypes.node
+	},
+  	render : function() {
     return(
           <p>
           <span>{this.props.children}</span>
