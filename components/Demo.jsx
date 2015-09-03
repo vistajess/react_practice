@@ -20,7 +20,7 @@ var Demo = React.createClass({
 
     			     <label>How did you hear about us?</label><br/>
 
-                    <RadioOptionGroup other={true} options={radioOptions} />
+                    <RadioOptionGroup name="referrer" other={true} options={radioOptions} />
                     
                 </div>
     	    </span>
