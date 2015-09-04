@@ -4,8 +4,7 @@ var Customers = React.createClass({
 			<div className="ok">
 			<h2>THIS IS THE CUSTOMER CLASS</h2>
 
-		
-			<Main_component />
+			{this.props.capacity}
 			
 			</div>
 		);
