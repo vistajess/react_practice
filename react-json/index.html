@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>REACT DEMO WITH BROWSERIFY</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style type="text/css">
+    #main {
+        background: yellow;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="main"></div>
+    <script src="../js/react.js"></script>
+    <script src="../js/JSXTransformer.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/jsx" src="component/Main_component.jsx"></script>
+    <script type="text/jsx" src="component/Customers.jsx"></script>
+    <script type="text/jsx">
+    React.render(<Main_component/>,document.getElementById('main'));
+    </script>
+      <!-- 
+    <script src="../js/react.js"></script>
+    <script src="../js/JSXTransformer.js"></script>
+    <script type="text/jsx" src="clickCounter.jsx"></script>
+    <script type="text/jsx">
+	React.render(<ClickCounter/>,document.body);
+    </script>
+  
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+     -->
+
+</html>

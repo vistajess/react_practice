@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!-- STEPS TO BUILD -->
+<!-- 
+ 1. Install react using NPM
+ 	"npm install -g react-tools"
+ 2.	Create a BUILD folder
+ 	"mkdir build"
+ 3.	Convert JSX into Javascript
+ 	"jsx -x jsx [folder_name of your components]/ build/"
+
+
+
+ -->
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+    .sample {
+        background: yellow;
+    }
+    </style>
+</head>
+
+<body>
+    <script src="../js/react.js"></script>
+    <!-- 
+    <script src="https://fb.me/react-0.13.3.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+     -->
+    <script src="Demo.js"></script>
+    <script src="RadioOption.js"></script>
+    <script src="RadioOtherOption.js"></script>
+    <script src="RadioOptionGroup.js"></script>
+    <script>
+    var demo = React.createElement(Demo);
+    // var demo = React.createElement(Demo); React.render(demo, document.body); // OTHER WAY IS THE APPROACH BELOW // ================================ 
+    React.render(demo, document.body);
+    </script>
+    <script>
+    (function() {
+        var obj = {
+            init: function() {
+
+                console.log("HELLO WORLD");
+            }
+
+        }
+        obj.init();
+    })();
+    </script>
+
+</html>
