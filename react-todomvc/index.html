@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>REACT TODO MVC</title>
+</head>
+
+<body>
+    <div id="App"></div>
+</body>
+<script type="text/javascript" src="../js/react.js"></script>
+<script type="text/javascript" src="../js/JSXTransformer.js"></script>
+<script type="text/jsx" src="components/MyApp.jsx"></script>
+<script type="text/jsx" src="components/ActionPanel.jsx"></script>
+<script type="text/jsx" src="components/InputAction.jsx"></script>
+<script type="text/jsx" src="components/SubmitButton.jsx"></script>
+<script type="text/jsx" src="components/List.jsx"></script>
+<script type="text/jsx">
+    React.render(
+    <MyApp/> , document.getElementById('App'));
+</script>
+
+</html>
